@@ -12,7 +12,7 @@ print(tv_sales_data)
 tv_sales_data_invalid_records=tv_sales_data[tv_sales_data["Company Name"].isnull() | tv_sales_data["Product Name"].isnull() | tv_sales_data["Size"].isnull() | tv_sales_data["State"].isnull() | tv_sales_data["Pin_Code"].isnull() | tv_sales_data["Price"].isnull()]
 tv_sales_data_valid_records=tv_sales_data[tv_sales_data["Company Name"].notna() & tv_sales_data["Product Name"].notna() & tv_sales_data["Size"].notna() & tv_sales_data["State"].notna() & tv_sales_data["Pin_Code"].notna() &  tv_sales_data["Price"].notna() ]
 
-tv_sales_data_invalid_records.to_csv("F:\\TIB Accademy\\Git\\TVSale\\data-analysis-tvsalesdata\\Nikhil\\invalidtelevision.txt")
-tv_sales_data_valid_records.to_csv("F:\\TIB Accademy\\Git\\TVSale\\data-analysis-tvsalesdata\\Nikhil\\valid television.txt")
+tv_sales_data_invalid_records.to_csv("F:\\TIB Accademy\\Git\\TVSale\\data-analysis-tvsalesdata\\Nikhil\\output files\\invalid television sales.txt")
+tv_sales_data_valid_records.to_csv("F:\\TIB Accademy\\Git\\TVSale\\data-analysis-tvsalesdata\\Nikhil\\output files\\valid television sales.txt")
 print("=======================")
 print(tv_sales_data_invalid_records)
